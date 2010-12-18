@@ -23,6 +23,7 @@
 	<project path="device/sample" name="device/sample" />
 	<project path="device/samsung/crespo" name="device/samsung/crespo" />
 	<project path="device/samsung/galaxys" name="coolya/android_device_samsung_galaxys" revision="master" remote="github" />
+        <project path="device/samsung/galaxys/initramfs" name="coolya/gingerbread-galaxys-initramfs" revision="master" remote="github" />
 	<project path="external/apache-http" name="platform/external/apache-http" />
 	<project path="external/astl" name="platform/external/astl" />
 	<project path="external/bison" name="platform/external/bison" />
