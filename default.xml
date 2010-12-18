@@ -176,4 +176,5 @@
 	<project path="system/wlan/ti" name="platform/system/wlan/ti" />
         <project path="vendor/samsung/galaxys" name="coolya/android_vendor_samsung_galaxys" revision="master" remote="github" />
         <project path="vendor/samsung/crespo" name="coolya/android_vendor_samsung_crespo" revision="master" remote="github" />
+        <project path="kernel/samsung" name="coolya/android_kernel_samsung" revision="android-samsung-2.6.35" remote="github" />
 </manifest>
