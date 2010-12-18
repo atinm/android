@@ -174,4 +174,6 @@
 	<project path="system/netd" name="platform/system/netd" />
 	<project path="system/vold" name="platform/system/vold" />
 	<project path="system/wlan/ti" name="platform/system/wlan/ti" />
+        <project path="vendor/samsung/galaxys" name="coolya/android_vendor_samsung_galaxys" revision="master" remote="github" />
+        <project path="vendor/samsung/crespo" name="coolya/android_vendor_samsung_crespo" revision="master" remote="github" />
 </manifest>
