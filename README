@@ -1,3 +1,29 @@
-HOWTO:
-repo init -u git://github.com/coolya/android.git
-repo sync
+#####################################
+#                                   #
+# GINGERBREAD FOR SAMSUNG GALAXY S  #
+#                                   #
+#####################################
+
+PREPARE YOUR BUILD SYSTEM:
+    sudo add-apt-repository "deb http://archive.canonical.com/ lucid partner"
+    sudo apt-get update
+    sudo apt-get install git-core gnupg flex bison gperf libsdl-dev libesd0-dev libwxgtk2.6-dev squashfs-tools build-essential zip curl libncurses5-dev zlib1g-dev sun-java6-jdk pngcrush g++-multilib lib32z1-dev lib32ncurses5-dev lib32readline5-dev gcc-4.3-multilib g++-4.3-multilib
+
+CREATE DIRECTORIES:
+    mkdir -p ~/bin 
+    mkdir -p ~/android/system 
+    cd ~/android/system 
+
+INSTALL REPO:
+    curl http://android.git.kernel.org/repo > ~/bin/repo 
+    chmod a+x ~/bin/repo
+    sudo reboot now
+
+INIT REPO:
+    repo init -u git://github.com/coolya/android.git
+    repo sync -j40
+
+BUILD FOR GALAXYS:
+    . build/envsetup.sh 
+    lunch full_galaxys-userdebug
+    make -j`grep 'processor' /proc/cpuinfo | wc -l`
