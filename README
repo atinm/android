@@ -1,0 +1,3 @@
+HOWTO:
+repo init -u git://github.com/coolya/android.git -b gingerbread
+repo sync
