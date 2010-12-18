@@ -27,3 +27,19 @@ BUILD FOR GALAXYS:
     . build/envsetup.sh 
     lunch full_galaxys-userdebug
     make -j`grep 'processor' /proc/cpuinfo | wc -l`
+
+#######################################
+#                                     #
+# KERNEL 2.6.35 FOR SAMSUNG GALAXY S  #
+#                                     #
+#######################################
+
+PREPARE:
+    cd ~/android/system/kernel/samsung
+    ./build.sh clean
+
+BUILD FOR GALAXYS:
+    ./build.sh
+
+
+
