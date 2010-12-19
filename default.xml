@@ -6,7 +6,7 @@
         <remote name="github" fetch="git://github.com/" />
 	<default revision="gingerbread" remote="korg" />
 
-	<project path="build" name="platform/build">
+	<project path="build" name="CyanogenMod/android_build" remote="github" revision="gingerbread">
 		<copyfile src="core/root.mk" dest="Makefile" />
 	</project>
 	<project path="bionic" name="platform/bionic" />
