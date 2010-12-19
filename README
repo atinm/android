@@ -35,11 +35,11 @@ BUILD FOR GALAXYS:
 #######################################
 
 PREPARE:
-    cd ~/android/system/kernel/samsung
-    ./build.sh clean
+    cd ~/android/system/kernel/samsung/2.6.32
+    ./build_galaxys.sh clean
 
 BUILD FOR GALAXYS:
-    ./build.sh
+    ./build_galaxys.sh
 
 
 
