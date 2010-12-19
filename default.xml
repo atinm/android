@@ -17,7 +17,7 @@
 	<project path="dalvik" name="platform/dalvik" />
 	<project path="development" name="platform/development" />
 	<project path="device/common" name="device/common" />
-	<project path="device/htc/common" name="device/htc/common" />
+	<project path="device/htc/common" name="CyanogenMod/android_device_htc_common" remote="github" revision="gingerbread" />
 	<project path="device/htc/passion" name="device/htc/passion" />
 	<project path="device/htc/passion-common" name="device/htc/passion-common" />
 	<project path="device/sample" name="device/sample" />
