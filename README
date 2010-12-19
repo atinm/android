@@ -1,8 +1,8 @@
-#####################################
-#                                   #
-# GINGERBREAD FOR SAMSUNG GALAXY S  #
-#                                   #
-#####################################
+############################################
+#                                          #
+# GINGERBREAD FOR SAMSUNG GALAXY S SERIES  #
+#                                          #
+############################################
 
 PREPARE YOUR BUILD SYSTEM:
     sudo add-apt-repository "deb http://archive.canonical.com/ lucid partner"
@@ -25,14 +25,19 @@ INIT REPO:
 
 BUILD FOR GALAXYS:
     . build/envsetup.sh 
-    lunch full_galaxys-userdebug
+    lunch full_galaxys-eng
     make -j`grep 'processor' /proc/cpuinfo | wc -l`
 
-#######################################
-#                                     #
-# KERNEL 2.6.35 FOR SAMSUNG GALAXY S  #
-#                                     #
-#######################################
+BUILD FOR CAPTIVATE:
+    . build/envsetup.sh 
+    lunch full_captivate-eng
+    make -j`grep 'processor' /proc/cpuinfo | wc -l`
+
+##############################################
+#                                            #
+# KERNEL 2.6.35 FOR SAMSUNG GALAXY S SERIES  #
+#                                            #
+##############################################
 
 PREPARE:
     cd ~/android/system/kernel/samsung/2.6.32
