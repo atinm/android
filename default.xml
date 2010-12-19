@@ -177,4 +177,6 @@
         <project path="vendor/samsung/galaxys" name="coolya/android_vendor_samsung_galaxys" revision="master" remote="github" />
         <project path="kernel/samsung/2.6.35" name="coolya/android_kernel_samsung" revision="android-samsung-2.6.35" remote="github" />
         <project path="kernel/samsung/2.6.32" name="coolya/samsung-kernel-aries" revision="master" remote="github" />
+
+        <project path="releasetools/samsung/galaxys" name="codeworkx/update" revision="gingerbread" remote="github" />
 </manifest>
