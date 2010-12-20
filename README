@@ -40,7 +40,7 @@ BUILD FOR CAPTIVATE:
 ##############################################
 
 PREPARE:
-    cd ~/android/system/kernel/samsung/2.6.32
+    cd ~/android/system/kernel/samsung/2.6.35
     ./build_galaxys.sh clean
 
 BUILD FOR GALAXYS:
