@@ -46,6 +46,9 @@ PREPARE:
 BUILD FOR GALAXYS:
     ./build_galaxys.sh
 
+BUILD FOR CAPTIVATE:
+    ./build_captivate.sh
+
 Note: Initramfs will be taken from device/samsung/galaxys/initramfs
 
 
