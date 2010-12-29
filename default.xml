@@ -148,6 +148,7 @@
 	<project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" />
 	<project path="packages/apps/SpeechRecorder" name="platform/packages/apps/SpeechRecorder" />
 	<project path="packages/apps/Stk" name="platform/packages/apps/Stk" />
+        <project path="packages/apps/Superuser" name="CyanogenMod/android_packages_apps_Superuser" remote="github" revision="gingerbread" />
 	<project path="packages/apps/Tag" name="platform/packages/apps/Tag" />
 	<project path="packages/apps/VoiceDialer" name="platform/packages/apps/VoiceDialer" />
 	<project path="packages/experimental" name="platform/packages/experimental" />
