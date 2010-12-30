@@ -1,8 +1,8 @@
-############################################
-#                                          #
-# GINGERBREAD FOR SAMSUNG GALAXY S SERIES  #
-#                                          #
-############################################
+##############################################
+#                                            #
+# CYANOGENMOD 7 FOR SAMSUNG GALAXY S SERIES  #
+#                                            #
+##############################################
 
 PREPARE YOUR BUILD SYSTEM:
     sudo add-apt-repository "deb http://archive.canonical.com/ lucid partner"
@@ -25,12 +25,12 @@ INIT REPO:
 
 BUILD FOR GALAXYS:
     . build/envsetup.sh 
-    lunch full_galaxys-eng
+    lunch cyanogen_galaxys-eng
     make -j`grep 'processor' /proc/cpuinfo | wc -l`
 
 BUILD FOR CAPTIVATE:
     . build/envsetup.sh 
-    lunch full_captivate-eng
+    lunch cyanogen_captivate-eng
     make -j`grep 'processor' /proc/cpuinfo | wc -l`
 
 ##############################################
@@ -45,10 +45,10 @@ PREPARE:
 
 BUILD FOR GALAXYS:
     ./build_galaxys.sh
+Note: Initramfs will be taken from device/samsung/galaxys/initramfs
 
 BUILD FOR CAPTIVATE:
     ./build_captivate.sh
-
-Note: Initramfs will be taken from device/samsung/galaxys/initramfs
+Note: Initramfs will be taken from device/samsung/captivate/initramfs
 
 
