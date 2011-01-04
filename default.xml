@@ -220,4 +220,6 @@
 
   <project path="android" name="CyanogenMod/android" remote="github" />
 
+  <project path="releasetools" name="coolya/release-tools" remote="github" revision="master" />
+
 </manifest>
