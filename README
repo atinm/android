@@ -24,14 +24,14 @@ INIT REPO:
     repo sync -j40
 
 BUILD FOR GALAXYS:
-    . build/envsetup.sh 
-    lunch cyanogen_galaxys-eng
-    make -j`grep 'processor' /proc/cpuinfo | wc -l`
+    ./build_galaxys.sh clean
+    ./build_galaxys.sh prepare
+    ./build_galaxys.sh
 
 BUILD FOR CAPTIVATE:
-    . build/envsetup.sh 
-    lunch cyanogen_captivate-eng
-    make -j`grep 'processor' /proc/cpuinfo | wc -l`
+    ./build_captivate.sh clean
+    ./build_captivate.sh prepare
+    ./build_captivate.sh
 
 ##############################################
 #                                            #
