@@ -39,10 +39,11 @@
   <project path="device/htc/vision" name="CyanogenMod/android_device_htc_vision" remote="github" />
   <project path="device/motorola/sholes" name="CyanogenMod/android_device_motorola_sholes" remote="github" />
   <project path="device/sample" name="device/sample" />
+  <project path="device/samsung/captivate" name="coolya/android_device_samsung_captivate" revision="master" remote="github" />
+  <project path="device/samsung/captivate/initramfs" name="coolya/gingerbread-captivate-initramfs" revision="master" remote="github" />
   <project path="device/samsung/crespo" name="coolya/android_device_samsung_crespo" remote="github" revision="gingerbread" />
   <project path="device/samsung/galaxys" name="coolya/android_device_samsung_galaxys" revision="master" remote="github" />
   <project path="device/samsung/galaxys/initramfs" name="coolya/gingerbread-galaxys-initramfs" revision="2.6.35" remote="github" />
-  <project path="device/samsung/captivate" name="atinm/android_device_samsung_captivate" revision="master" remote="github" />  
   <project path="external/apache-http" name="platform/external/apache-http" />
   <project path="external/astl" name="platform/external/astl" />
   <project path="external/bash" name="CyanogenMod/android_external_bash" remote="github" />
@@ -215,9 +216,9 @@
   <project path="system/wlan/ti" name="CyanogenMod/android_system_wlan_ti" remote="github" />
 
   <project path="vendor/cyanogen" name="coolya/android_vendor_cyanogen" remote="github" />
+  <project path="vendor/samsung/captivate" name="coolya/android_vendor_samsung_captivate" revision="master" remote="github" />
   <project path="vendor/samsung/galaxys" name="coolya/android_vendor_samsung_galaxys" revision="master" remote="github" />
-  <project path="vendor/samsung/captivate" name="atinm/android_vendor_samsung_captivate" revision="gingerbread" remote="github" />
-
+  
   <project path="kernel/samsung/2.6.35" name="coolya/android_kernel_samsung" revision="android-samsung-2.6.35" remote="github" />
 
   <project path="android" name="CyanogenMod/android" remote="github" />
