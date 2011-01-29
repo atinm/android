@@ -40,7 +40,7 @@
   <project path="device/motorola/sholes" name="CyanogenMod/android_device_motorola_sholes" remote="github" />
   <project path="device/sample" name="device/sample" />
   <project path="device/samsung/captivate" name="coolya/android_device_samsung_captivate" revision="master" remote="github" />
-  <project path="device/samsung/captivate/initramfs" name="coolya/gingerbread-captivate-initramfs" revision="master" remote="github" />
+  <project path="device/samsung/captivate/initramfs" name="coolya/gingerbread_captivate_initramfs" revision="master" remote="github" />
   <project path="device/samsung/crespo" name="coolya/android_device_samsung_crespo" remote="github" revision="gingerbread" />
   <project path="device/samsung/galaxys" name="coolya/android_device_samsung_galaxys" revision="master" remote="github" />
   <project path="device/samsung/galaxys/initramfs" name="coolya/gingerbread-galaxys-initramfs" revision="2.6.35" remote="github" />
