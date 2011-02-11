@@ -24,7 +24,7 @@ INSTALL REPO:
     sudo reboot now
 
 INIT REPO:
-    repo init -u git://github.com/coolya/android.git
+    repo init -u git://github.com/atinm/android.git
     repo sync -j40
 
 BUILD FOR GALAXYS:
