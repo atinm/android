@@ -17,6 +17,14 @@
   <project path="build" name="CyanogenMod/android_build" remote="github">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
+
+  <project path="buildscripts" name="coolya/buildscripts" remote="github" revision="master">
+    <copyfile src="samsung/build_galaxys.sh" dest="build_galaxys.sh" />
+    <copyfile src="samsung/build_captivate.sh" dest="build_captivate.sh" />
+    <copyfile src="samsung/build_fascinate.sh" dest="build_fascinate.sh" />
+    <copyfile src="samsung/build_vibrant.sh" dest="build_vibrant.sh" />
+  </project>
+
   <project path="bionic" name="CyanogenMod/android_bionic" remote="github" />
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
   <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
