@@ -49,7 +49,11 @@
   <project path="device/motorola/sholes" name="CyanogenMod/android_device_motorola_sholes" remote="github" />
   <project path="device/nvidia/harmony" name="CyanogenMod/android_device_harmony" remote="github" />
   <project path="device/sample" name="device/sample" />
-  <project path="device/samsung/crespo" name="CyanogenMod/android_device_samsung_crespo" remote="github" />
+   <project path="device/samsung/captivate" name="atinm/android_device_samsung_captivate" revision="master" remote="github" />
+  <project path="device/samsung/captivate/initramfs" name="atinm/gingerbread_captivate_initramfs" revision="master" remote="github" />
+  <project path="device/samsung/crespo" name="coolya/android_device_samsung_crespo" remote="github" revision="gingerbread" />
+  <project path="device/samsung/galaxys" name="coolya/android_device_samsung_galaxys" revision="master" remote="github" />
+  <project path="device/samsung/galaxys/initramfs" name="coolya/gingerbread-galaxys-initramfs" revision="2.6.35" remote="github" />
   <project path="device/zte/blade" name="CyanogenMod/android_device_zte_blade" remote="github" />
   <project path="external/apache-http" name="platform/external/apache-http" />
   <project path="external/astl" name="platform/external/astl" />
