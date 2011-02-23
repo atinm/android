@@ -62,7 +62,6 @@
   <project path="device/samsung/crespo" name="coolya/android_device_samsung_crespo" remote="github" revision="gingerbread" />
   <project path="device/samsung/galaxys" name="coolya/android_device_samsung_galaxys" revision="master" remote="github" />
   <project path="device/samsung/galaxys/initramfs" name="coolya/gingerbread-galaxys-initramfs" revision="2.6.35" remote="github" />
-  <project path="device/zte/blade" name="CyanogenMod/android_device_zte_blade" remote="github" />
   <project path="external/apache-http" name="platform/external/apache-http" />
   <project path="external/astl" name="platform/external/astl" />
   <project path="external/bash" name="CyanogenMod/android_external_bash" remote="github" />
