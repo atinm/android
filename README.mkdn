@@ -29,9 +29,9 @@ Getting Started
 To get started with Android/CyanogenMod, you'll need to get
 familiar with [Git and Repo](http://source.android.com/download/using-repo).
 
-To initialize your local repository using the CyanogenMod trees, use a command like this:
+To initialize your local repository using these trees, use a command like this:
 
-    repo init -u git://github.com/CyanogenMod/android.git -b gingerbread
+    repo init -u git://github.com/atinm/android.git -b gingerbread
 
 Then to sync up:
 
