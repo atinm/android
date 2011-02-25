@@ -14,23 +14,17 @@
   <default revision="gingerbread"
            remote="korg" />
 
-  <project path="build" name="coolya/android_build" remote="github">
+  <project path="build" name="teamhacksung/android_build" remote="github">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-
-  <project path="buildscripts" name="coolya/buildscripts" remote="github" revision="master">
-    <copyfile src="samsung/build_galaxys.sh" dest="build_galaxys.sh" />
-    <copyfile src="samsung/build_captivate.sh" dest="build_captivate.sh" />
-  </project>
-
   <project path="bionic" name="CyanogenMod/android_bionic" remote="github" />
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
   <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
-  <project path="bootable/recovery" name="coolya/android_bootable_recovery" remote="github" revision="gingerbread" />
+  <project path="bootable/recovery" name="teamhacksung/android_bootable_recovery" remote="github" />
   <project path="dalvik" name="CyanogenMod/android_dalvik" remote="github" />
   <project path="development" name="CyanogenMod/android_development" remote="github" />
   <project path="device/common" name="device/common" />
-  <project path="device/bn/nookcolor" name="CyanogenMod/android_device_bn_nookcolor" remote="github" />
+  <project path="device/bn/encore" name="CyanogenMod/android_device_bn_encore" remote="github" />
   <project path="device/commtiva/z71" name="CyanogenMod/android_device_commtiva_z71" remote="github" />
   <project path="device/geeksphone/one" name="CyanogenMod/android_device_geeksphone_one" remote="github" />
   <project path="device/huawei/ascend" name="CyanogenMod/android_device_huawei_ascend" remote="github" />
@@ -44,6 +38,7 @@
   <project path="device/htc/inc" name="CyanogenMod/android_device_htc_inc" remote="github" />
   <project path="device/htc/glacier" name="CyanogenMod/android_device_htc_glacier" remote="github" />
   <project path="device/htc/hero" name="CyanogenMod/android_device_htc_hero" remote="github" />
+  <project path="device/htc/heroc" name="CyanogenMod/android_device_htc_heroc" remote="github" />
   <project path="device/htc/legend" name="CyanogenMod/android_device_htc_legend" remote="github" />
   <project path="device/htc/leo" name="CyanogenMod/android_device_htc_leo" remote="github" />
   <project path="device/htc/liberty" name="CyanogenMod/android_device_htc_liberty" remote="github" />
@@ -54,11 +49,14 @@
   <project path="device/motorola/sholes" name="CyanogenMod/android_device_motorola_sholes" remote="github" />
   <project path="device/nvidia/harmony" name="CyanogenMod/android_device_harmony" remote="github" />
   <project path="device/sample" name="device/sample" />
-  <project path="device/samsung/captivate" name="atinm/android_device_samsung_captivate" revision="master" remote="github" />
-  <project path="device/samsung/captivate/initramfs" name="atinm/gingerbread_captivate_initramfs" revision="master" remote="github" />
-  <project path="device/samsung/crespo" name="coolya/android_device_samsung_crespo" remote="github" revision="gingerbread" />
-  <project path="device/samsung/galaxys" name="coolya/android_device_samsung_galaxys" revision="master" remote="github" />
-  <project path="device/samsung/galaxys/initramfs" name="coolya/gingerbread-galaxys-initramfs" revision="2.6.35" remote="github" />
+  <project path="device/samsung/common" name="teamhacksung/android_device_samsung_common" remote="github" />
+  <project path="device/samsung/captivate" name="atinm/android_device_samsung_captivate" remote="github" />
+  <project path="device/samsung/crespo" name="CyanogenMod/android_device_samsung_crespo" remote="github" />
+  <project path="device/samsung/galaxys" name="teamhacksung/android_device_samsung_galaxys" remote="github" />
+  <project path="device/samsung/vibrant" name="teamhacksung/android_device_samsung_vibrant" remote="github" />
+  <project path="device/zte/blade" name="CyanogenMod/android_device_zte_blade" remote="github" />
+  <project path="external/alsa-lib" name="CyanogenMod/android_external_alsa-lib" remote="github" />
+  <project path="external/alsa-utils" name="CyanogenMod/android_external_alsa-utils" remote="github" />
   <project path="external/apache-http" name="platform/external/apache-http" />
   <project path="external/astl" name="platform/external/astl" />
   <project path="external/bash" name="CyanogenMod/android_external_bash" remote="github" />
@@ -158,12 +156,14 @@
   <project path="frameworks/ex" name="platform/frameworks/ex" />
   <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji" />
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" />
+  <project path="hardware/gpsshim" name="CyanogenMod/android_hardware_gpsshim" remote="github" />
   <project path="hardware/libhardware" name="CyanogenMod/android_hardware_libhardware" remote="github" />
   <project path="hardware/libhardware_legacy" name="CyanogenMod/android_hardware_libhardware_legacy" remote="github" />
   <project path="hardware/msm7k" name="CyanogenMod/android_hardware_msm7k" remote="github" />
   <project path="hardware/qcom/gps" name="CyanogenMod/android_hardware_qcom_gps" remote="github" />
   <project path="hardware/qcom/media" name="CyanogenMod/android_hardware_qcom_media" remote="github" />
   <project path="hardware/ril" name="CyanogenMod/android_hardware_ril" remote="github" />
+  <project path="hardware/alsa_sound" name="CyanogenMod/android_hardware_alsa_sound" remote="github" />
   <project path="hardware/ti/omap3" name="CyanogenMod/android_hardware_ti_omap3" remote="github" />
   <project path="hardware/ti/wlan" name="CyanogenMod/android_hardware_ti_wlan" remote="github" />
   <project path="libcore" name="platform/libcore" />
@@ -184,7 +184,7 @@
   <project path="packages/apps/Contacts" name="CyanogenMod/android_packages_apps_Contacts" remote="github" />
   <project path="packages/apps/DeskClock" name="CyanogenMod/android_packages_apps_DeskClock" remote="github" />
   <project path="packages/apps/DSPManager" name="CyanogenMod/android_packages_apps_DSPManager" remote="github" />
-  <project path="packages/apps/Email" name="platform/packages/apps/Email" />
+  <project path="packages/apps/Email" name="CyanogenMod/android_packages_apps_Email" remote="github" />
   <project path="packages/apps/FileManager" name="CyanogenMod/android_packages_apps_FileManager" remote="github" />
   <project path="packages/apps/FM" name="CyanogenMod/android_packages_apps_FM" remote="github" />
   <project path="packages/apps/Gallery" name="platform/packages/apps/Gallery" />
@@ -227,18 +227,16 @@
   <project path="prebuilt" name="platform/prebuilt" />
   <project path="sdk" name="platform/sdk" revision="tools_r7" />
   <project path="system/bluetooth" name="platform/system/bluetooth" />
-  <project path="system/core" name="coolya/android_system_core" remote="github" />
+  <project path="system/core" name="teamhacksung/android_system_core" remote="github" />
   <project path="system/extras" name="CyanogenMod/android_system_extras" remote="github" />
   <project path="system/media" name="platform/system/media" />
   <project path="system/netd" name="CyanogenMod/android_system_netd" remote="github" />
   <project path="system/vold" name="CyanogenMod/android_system_vold" remote="github" />
   <project path="system/wlan/ti" name="CyanogenMod/android_system_wlan_ti" remote="github" />
 
-  <project path="vendor/cyanogen" name="coolya/android_vendor_cyanogen" remote="github" />
-  <project path="vendor/samsung/captivate" name="coolya/android_vendor_samsung_captivate" revision="master" remote="github" />
-  <project path="vendor/samsung/galaxys" name="coolya/android_vendor_samsung_galaxys" revision="master" remote="github" />
+  <project path="vendor/cyanogen" name="teamhacksung/android_vendor_cyanogen" remote="github" />
   
-  <project path="kernel/samsung/2.6.35" name="coolya/android_kernel_samsung" revision="android-samsung-2.6.35" remote="github" />
+  <project path="vendor/samsung/common" name="teamhacksung/android_vendor_samsung_common" remote="github" />
 
   <project path="vendor/tmobile/apps/ThemeChooser" name="CyanogenMod/themes-platform-vendor-tmobile-apps-ThemeChooser" remote="github" revision="refs/heads/master" />
   <project path="vendor/tmobile/libs/com.tmobile.themes" name="themes-platform-vendor-tmobile-libs-com.tmobile.themes" remote="themes" revision="refs/heads/master" />
@@ -247,10 +245,6 @@
   <project path="vendor/tmobile/themes/Cyanbread" name="themes-platform-vendor-tmobile-themes-Cyanbread" remote="themes" revision="refs/heads/master" />
   <project path="vendor/tmobile/products/themes" name="themes-platform-vendor-tmobile-products-themes" remote="themes" revision="refs/heads/master" />
 
-  <project path="android" name="Cyanogenmod/android" remote="github" />
-  <project path="coolya_android" name="coolya/android" remote="github" />
-  <project path="atinm_android" name="atinm/android" remote="github" />
-
-  <project path="releasetools" name="coolya/release-tools" remote="github" revision="master" />
+  <project path="android" name="CyanogenMod/android" remote="github" />
 
 </manifest>
